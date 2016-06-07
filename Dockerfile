@@ -33,4 +33,4 @@ VOLUME /data
 
 EXPOSE ${CONF_PORT}
 
-ENTRYPOINT ["${CONF_INSTALL}/bin/start-confluence.sh", "-fg"]
+ENTRYPOINT ["/usr/local/confluence/bin/start-confluence.sh", "-fg"]
