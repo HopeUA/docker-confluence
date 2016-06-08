@@ -17,7 +17,7 @@ RUN \
     wget https://www.atlassian.com/software/confluence/downloads/binary/atlassian-confluence-${CONF_VERSION}.tar.gz && \
     mkdir -p ${CONF_INSTALL} && \
     tar -xzf atlassian-confluence-${CONF_VERSION}.tar.gz -C ${CONF_INSTALL} --strip-components=1 && \
-    echo "confluence.home=/data" >> "${CONF_INSTALL}/confluence/WEB-INF/classes/confluence-init.properties" && \
+    echo -e "\nconfluence.home=/data" >> "${CONF_INSTALL}/confluence/WEB-INF/classes/confluence-init.properties" && \
 
     # MySQL connector
     # https://dev.mysql.com/downloads/connector/j/
