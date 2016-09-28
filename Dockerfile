@@ -3,7 +3,7 @@ FROM hope/java:8
 MAINTAINER Sergey Sadovoi <sergey@hope.ua>
 
 ENV \
-    CONF_VERSION=5.10.0 \
+    CONF_VERSION=5.10.6 \
     CONF_PORT=8090 \
     CONF_INSTALL=/usr/local/confluence \
     MYSQL_CONNECTOR_VERSION=5.1.39
